@@ -3,7 +3,6 @@ Cat Facts Made Easy.
 
 [![N|Solid](https://awful-magic.surge.sh/logo192.png)](https://awful-magic.surge.sh/)
 
-
 When asessing the viability of a searchable indexed dashboard - it is always important to remember who will be using it. In this case it is simple as our users are generally people who have mad love for cats.
 
 # The Task

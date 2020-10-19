@@ -5,6 +5,7 @@ Cat Facts Made Easy.
 
 When asessing the viability of a searchable indexed dashboard - it is always important to remember who will be using it. In this case it is simple as our users are generally people who have mad love for cats.
 
+
 # The Task
 ### You will be building a cat facts dashboard. Please find a rough sketch of the expected apps layout and functionality on the following page of this pdf. A little flare in the design is encouraged. The sketch should only be used as a guide.
 - [x] Please return a solution to the task within a week of receiving.

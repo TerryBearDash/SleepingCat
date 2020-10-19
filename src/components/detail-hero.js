@@ -32,7 +32,6 @@ class DetailHero extends Component {
         fetch(`'https://aws.random.cat/meow'`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);  
             this.setState({ upvotes: this.props.data ? this.props.data.upvotes : 0 });
         });
     }

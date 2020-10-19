@@ -15,23 +15,13 @@ import {
 
 const api = {
   getCats() {
-      return fetch('https://cat-fact.herokuapp.com/facts')
-      .then(response => response.json())
-      .then(data => {
-          console.log(data);
-          return data;
-      });
+      return fetch('https://cat-fact.herokuapp.com/facts').then(response => response.json()).then(data => data);
   },
   getAvatar(first, last) {
-      return fetch(`https://eu.ui-avatars.com/api/?name=${first}+${last}`)
-      .then(response => response.json())
-      .then(data => data);
-  }
+      return fetch(`https://eu.ui-avatars.com/api/?name=${first}+${last}`).then(response => response.json()).then(data => data) }
 };
 
-const mapStateToProps = state => ({
-  ...state
-});
+const mapStateToProps = state => ({ ...state });
 
 const mapDispatchToProps = dispatch => ({
   simpleAction: (data) => dispatch(simpleAction(data))
@@ -40,18 +30,12 @@ const mapDispatchToProps = dispatch => ({
 class App extends Component {
 
   componentDidMount() {
-    api.getCats().then(d => {
-      console.log(d);
-      this.props.simpleAction(d.all);
-    });
+    api.getCats().then(d => this.props.simpleAction(d.all) );
   }
 
   simpleAction = (event) => {
     this.props.simpleAction();
-    api.getCats().then(d => {
-      console.log(d);
-      this.props.simpleAction(d.all);
-    });
+    api.getCats().then(d => this.props.simpleAction(d.all) );
   }
 
   render() {

@@ -8,10 +8,8 @@ import Footer from '../components/footer';
 import { Link } from "react-router-dom";
 
 const Home = (props) => {
-    console.log(props);
 
     const updatePages = (evt) => {
-        console.log(evt);
         props.data.simpleAction();
     }
 
@@ -56,11 +54,11 @@ const Home = (props) => {
                 </div>
             </div>
         </div>,
-        <div className="container">
+        <div className="container" key="3">
             <Table props={props} onPageChange={updatePages} data={props.data.simpleReducer.result} key="3" />
         </div>,
-        <EndScene />,
-        <Footer />
+        <EndScene key="4" />,
+        <Footer key="5" />
     ])
 }
 

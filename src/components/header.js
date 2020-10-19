@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderImage from '../assets/img/header-logo.png'
 
-const Header = (props) => {
+const Header = () => {
     return (
         <header>
             <div className="container">
